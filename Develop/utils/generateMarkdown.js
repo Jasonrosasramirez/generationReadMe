@@ -17,4 +17,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown; // functions must always be exported before working in other scripts
