@@ -67,24 +67,8 @@ const questions = [
 ]
 
 
-function init() {
-    inquirer 
-    .prompt(questions) // prompts the array of questions on the terminal
-    .then(answer => { // a promise made here. 
-        console.log(answer.title);
-
-        //writeToFile(answer.title, );
-        //call the write to file here
-    })
-
-}
-
-// generateMarkdown(); bring me back in later :D 
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    //call the markdownMarkdown()
 
     fs.writeToFile(fileName, data, function(err) {
         console.log(fileName); 
@@ -100,22 +84,23 @@ function writeToFile(fileName, data) {
 }
 
 
+function init() {
+    // this brings it all together. 
+
+    inquirer 
+    .prompt(questions) // prompts the array of questions on the terminal
+    .then(answer => { // a promise made here. 
+        console.log(answer.title);
+
+        writeToFile("README.md", generateMarkdown(data));
+        console.log(data)
+    })
+
+}
+
+
 // Function call to initialize app
 init(); // parameters will be name description, etc.  
-
-
-
-/*
-
-.then((answers) => {
-    const htmlPageContent = generateHTML(answers);
-
-    fs.writeFile('readMe.md', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-
-*/
-
 
 
 // references
