@@ -7,10 +7,12 @@ const generateMarkdown = require("./utils/generateMarkdown"); // links to the ge
 
 // TODO: Create an array of questions for user input
 const questions = [
+    // Contains all of the prompts that will be asked. 
+
     {
         type: "input", // sets the input type to a string user input. 
         message: "What is the App name?", // prompt for the user in the command terminal 
-        name: "title" // where the message input is stored
+        name: "title" // where the message input is stored as a hash. Can be assessed by referencing answers.
     }, 
 
     {
@@ -67,10 +69,10 @@ const questions = [
 
 function init() {
     inquirer 
-    .prompt(questions) // prompts the array of questions
-    .then(answer => {
+    .prompt(questions) // prompts the array of questions on the terminal
+    .then(answer => { // a promise made here. 
         console.log(answer.title);
-        
+
         //writeToFile(answer.title, );
         //call the write to file here
     })
@@ -83,18 +85,24 @@ function init() {
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     //call the markdownMarkdown()
+
+    fs.writeToFile(fileName, data, function(err) {
+        console.log(fileName); 
+        console.log(data);
+
+        if (err) {
+            return console.log(err); 
+        } else {
+            console.log("success");
+        }
+    })
+
 }
 
 
 // Function call to initialize app
 init(); // parameters will be name description, etc.  
 
-
-// references
-
-// https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
-// https://www.npmjs.com/package/inquirer
-// https://nodejs.dev/learn/writing-files-with-nodejs
 
 
 /*
@@ -109,4 +117,10 @@ init(); // parameters will be name description, etc.
 */
 
 
+
+// references
+
+// https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
+// https://www.npmjs.com/package/inquirer
+// https://nodejs.dev/learn/writing-files-with-nodejs
 
