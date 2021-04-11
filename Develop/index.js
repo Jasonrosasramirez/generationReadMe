@@ -70,7 +70,13 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 
-    fs.writeToFile(fileName, data, function(err) {
+  //fs.writeFile(fileName, data, [encoding], [callback])
+    fs.writeFile(fileName, data, function(err) {
+        // file = (string) | filepath to file 
+        // data = (string or buffer) | what you will write into the file
+        // encoding = (optional string) | utf8 is assumed if no encoding provided
+        // callback = (function (err)) | This function
+
         console.log(fileName); 
         console.log(data);
 
@@ -79,6 +85,9 @@ function writeToFile(fileName, data) {
         } else {
             console.log("success");
         }
+
+        // source below
+        // https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
     })
 
 }
