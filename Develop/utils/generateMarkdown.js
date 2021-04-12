@@ -18,21 +18,19 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 function renderLicenseLink(license) {
+  
   if (license == "MIT") {
     return ("[MIT License] (https://www.opensource.org/licenses/MIT)");
   }
   else if (license == "Apache") {
     return ("[Apache License] (https://www.opensource.org/licenses/Apache-2.0)")
   }
+  else if (license == "GPLv2") {
+    return ("[GPLv2 License] (https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)");
+  } else {
+    return (""); // If there is no license, return an empty string
+  }
   
-  
-  
-  
-  
-  // If there is no license, return an empty string
-
-
-
 }
 
 // TODO: Create a function that returns the license section of README
