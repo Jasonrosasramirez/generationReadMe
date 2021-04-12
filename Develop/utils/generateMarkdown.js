@@ -18,7 +18,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 function renderLicenseLink(license) {
-  
+
   if (license == "MIT") {
     return ("[MIT License] (https://www.opensource.org/licenses/MIT)");
   }
@@ -35,17 +35,25 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 function renderLicenseSection(license) {
-  // If there is no license, return an empty string
+  
+  var lincenseLink = renderLicenseLink(license); // the license entered in by the user stored as a variable to the HTML link
 
-
-
+  if (lincenseLink == "MIT" || "Apache" || "GPLv2") { 
+    return ("License under the " + lincenseLink); 
+  } else { 
+    return (""); // If there is no license, return an empty string 
+  }
+  
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `# ${data.title} 
 
-`;
+  ${renderLicenseBadge(data.license)}
+
+`; // interpolates whatever is in this directly into a string. 
+
 }
 
 
