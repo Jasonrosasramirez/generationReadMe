@@ -57,8 +57,13 @@ function generateMarkdown(data) {
 
   ## Table of Contents
 
+  * [description](##description)
 
+  ## Description
+  ${data.description}
 
+  ## License
+  ${renderLicenseSection(data.license)}
 
 
 
