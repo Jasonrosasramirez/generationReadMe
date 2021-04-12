@@ -1,4 +1,4 @@
-# the app name is here 
+# BurgerTime 
 
   ![License: MIT] (https://img.shields.io/badge/License-MIT-yellow.svg) 
 
@@ -13,30 +13,27 @@
   * [Lisense](##Lisence)
 
   ## Description
-  testing is a double edge sword 
+  useme
 
   ## Installation 
-  idl. we'll see 
+  idk
 
   ## Usage 
-  stuff 
+  lets see 
 
   ## Contributions
-  just help :) 
+  ask 
 
   ## Tests 
-  pfizer 
+  test
 
   ## Questions 
 
-  Github username: we'll see
-
+  Meet the author: Jason
+  Github username: jasonrosasramirez
+  Github Proflie Link: (https://github.com/jasonrosasramirez)
+  email: (emailhere)
 
   ## License
   License under the [MIT License] (https://www.opensource.org/licenses/MIT)
-
-
-
-
-
 

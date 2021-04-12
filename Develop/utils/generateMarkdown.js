@@ -53,6 +53,7 @@ function generateMarkdown(data) {
   // Everything within the return is what is actually written to the readme file. 
   return `# ${data.title} 
 
+  Application Author: ${data.author}
   ${renderLicenseBadge(data.license)} 
 
   ## Table of Contents
@@ -81,17 +82,14 @@ function generateMarkdown(data) {
   ${data.test}
 
   ## Questions 
-
+  If you have any questions, feel free to reach out via my GitHub or email below :)
+   
   Github username: ${data.questionsGithub}
-
+  Github Proflie Link: (https://github.com/${data.questionsGithub})
+  email: (${data.questionsEmail})
 
   ## License
   ${renderLicenseSection(data.license)}
-
-
-
-
-
 
 `; 
 
