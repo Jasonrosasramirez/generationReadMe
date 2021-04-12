@@ -1,7 +1,6 @@
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  // If there is no license, return an empty string
 
   if (license == "MIT") {
     return ("![License: MIT] (https://img.shields.io/badge/License-MIT-yellow.svg)"); // references the image of the license badge
@@ -9,9 +8,13 @@ function renderLicenseBadge(license) {
   else if (license == "Apache") {
     return ("![License: MIT] (https://img.shields.io/badge/License-Apache%202.0-blue.svg)");
   }
+  else if (license == "GPLv2") { 
+    return ("![License:GPLv2] (https://img.shields.io/badge/License-GPL%20v2-blue.svg)");
+  } else { 
 
-
-  // "MIT", "GPLv2", "Apache", "No License"
+      // If there is no license, return an empty string
+    return (""); 
+  }
 
 }
 
