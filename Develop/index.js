@@ -106,7 +106,7 @@ function init() {
 
         var readme = generateMarkdown(answer); // passes the answer hash to the generate markdown script via the function above. 
         console.log(readme); // checking the variable
-        writeToFile("./generateHere", readme);  // the file directory in quotes, the readme is considered the template.  
+        writeToFile("./generateHere/README.md", readme);  // the file directory in quotes, the readme is considered the template.  
 
     })
 
