@@ -28,7 +28,7 @@ const questions = [
     }, 
 
     {
-        type: "list", 
+        type: "list", // A list here will come out as a string. Using checklist will output results as an array
         message: "choose your license", 
         name: "license", 
         choices: ["MIT", "GPLv2", "Apache", "No License"]  
@@ -67,18 +67,18 @@ const questions = [
 ]
 
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+// Writes the README file. 
+function writeToFile(fileName, template) {
 
   //fs.writeFile(fileName, data, [encoding], [callback])
-    fs.writeFile(fileName, data, function(err) {
+    fs.writeFile(fileName, template, function (err) {
         // file = (string) | filepath to file 
         // data = (string or buffer) | what you will write into the file
         // encoding = (optional string) | utf8 is assumed if no encoding provided
         // callback = (function (err)) | This function
 
         console.log(fileName); 
-        console.log(data);
+        console.log(template);
 
         if (err) {
             return console.log(err); 
