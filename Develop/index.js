@@ -101,16 +101,12 @@ function init() {
     .then((answer) => { // a promise made here. Answers access the hash where the name is stored. 
         
         // debugger
-        console.log(answer.title); // prints out what the title is. Access the hash using answer. 
+        console.log("\n" + answer.title); // prints out what the title is. Access the hash using answer. 
         console.log(answer.description);
 
-        /*
-        not ready yet.  
-
-        writeToFile("README.md", generateMarkdown(data));
-        console.log(data);
-
-        */
+        var readme = generateMarkdown(answer); // passes the answer hash to the generate markdown script via the function above. 
+        console.log(readme); // checking the variable
+        writeToFile("./generateHere", readme);  // the file directory in quotes, the readme is considered the template.  
 
     })
 
