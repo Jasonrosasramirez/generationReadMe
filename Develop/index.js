@@ -98,11 +98,19 @@ function init() {
 
     inquirer 
     .prompt(questions) // prompts the array of questions on the terminal
-    .then(answer => { // a promise made here. 
-        console.log(answer.title);
+    .then((answer) => { // a promise made here. Answers access the hash where the name is stored. 
+        
+        // debugger
+        console.log(answer.title); // prints out what the title is. 
+
+        /*
+        not ready yet.  
 
         writeToFile("README.md", generateMarkdown(data));
         console.log(data);
+
+        */
+
     })
 
 }
