@@ -90,7 +90,7 @@ function writeToFile(fileName, template) {
         // https://nodejs.org/en/knowledge/file-system/how-to-write-files-in-nodejs/
     })
 
-}
+} // write to file complete. 
 
 
 function init() {
@@ -101,7 +101,8 @@ function init() {
     .then((answer) => { // a promise made here. Answers access the hash where the name is stored. 
         
         // debugger
-        console.log(answer.title); // prints out what the title is. 
+        console.log(answer.title); // prints out what the title is. Access the hash using answer. 
+        console.log(answer.description);
 
         /*
         not ready yet.  
