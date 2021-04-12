@@ -11,15 +11,24 @@ function renderLicenseBadge(license) {
   else if (license == "GPLv2") { 
     return ("![License:GPLv2] (https://img.shields.io/badge/License-GPL%20v2-blue.svg)");
   } else { 
-
-      // If there is no license, return an empty string
-    return (""); 
+    return (""); // If there is no license, return an empty string
   }
 
 }
 
 // TODO: Create a function that returns the license link
 function renderLicenseLink(license) {
+  if (license == "MIT") {
+    return ("[MIT License] (https://www.opensource.org/licenses/MIT)");
+  }
+  else if (license == "Apache") {
+    return ("[Apache License] (https://www.opensource.org/licenses/Apache-2.0)")
+  }
+  
+  
+  
+  
+  
   // If there is no license, return an empty string
 
 
