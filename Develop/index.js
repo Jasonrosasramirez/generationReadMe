@@ -104,9 +104,9 @@ function init() {
         console.log("\n" + answer.title); // prints out what the title is. Access the hash using answer. 
         console.log(answer.description);
 
-        var readme = generateMarkdown(answer); // passes the answer hash to the generate markdown script via the function above. 
-        console.log(readme); // checking the variable
-        writeToFile("./generateHere/README.md", readme);  // the file directory in quotes, the readme is considered the template.  
+        var readme = generateMarkdown(answer); // represents the template within the generateMarkdown.js script as a variable. The answer hash is then used as the data parameter
+        console.log(readme); // prints the variable. What is represented here, will be printed on the readme file. 
+        writeToFile("./generateHere/README.md", readme);  // the desired readme directory - must update the readme itself, what we will write to the actual readme using file system. 
 
     })
 

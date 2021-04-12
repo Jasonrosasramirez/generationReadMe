@@ -49,15 +49,23 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   
-  // the return listed below appears on the terminal. 
+  // interpolates whatever is in this directly into a string. 
+  // Everything within the return is what is actually written to the readme file. 
   return `# ${data.title} 
 
-  ${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)} 
 
-`; // interpolates whatever is in this directly into a string. 
+  ## Table of Contents
+
+
+
+
+
+
+`; 
 
 }
 
 
 module.exports = generateMarkdown; // functions must always be exported before working in other scripts. In this case, the other three functions will be called within markdown. 
-// function license badge, link, sections are independant functions that will be called in generateMarkdown. 
+// so the generate generateMarkdown actually carries over the readme template to the Index.js file so it can be written. 
