@@ -68,15 +68,25 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ## License
-  ${renderLicenseSection(data.license)}
+  ## Installation 
+  ${data.installation}
+
+  ## Usage 
+  ${data.usageInformation}
+
+  ## Contributions
+  ${data.contributions}
+
+  ## Tests 
+  ${data.test}
 
   ## Questions 
 
   Github username: ${data.questionsGithub}
 
 
-
+  ## License
+  ${renderLicenseSection(data.license)}
 
 
 

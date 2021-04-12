@@ -1,4 +1,4 @@
-# jason hello  
+# the app name is here 
 
   ![License: MIT] (https://img.shields.io/badge/License-MIT-yellow.svg) 
 
@@ -13,17 +13,27 @@
   * [Lisense](##Lisence)
 
   ## Description
-  monday day coding 
+  testing is a double edge sword 
 
-  ## License
-  License under the [MIT License] (https://www.opensource.org/licenses/MIT)
+  ## Installation 
+  idl. we'll see 
+
+  ## Usage 
+  stuff 
+
+  ## Contributions
+  just help :) 
+
+  ## Tests 
+  pfizer 
 
   ## Questions 
 
-  Github username: jass
+  Github username: we'll see
 
 
-
+  ## License
+  License under the [MIT License] (https://www.opensource.org/licenses/MIT)
 
 
 
