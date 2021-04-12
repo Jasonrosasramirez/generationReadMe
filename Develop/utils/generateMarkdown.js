@@ -3,6 +3,13 @@
 function renderLicenseBadge(license) {
   // If there is no license, return an empty string
 
+  if (license == "MIT") {
+    return ("![License: MIT] (https://img.shields.io/badge/License-MIT-yellow.svg)"); // references the image of the license badge
+  } 
+  else if (license == "Apache") {
+    return ("![License: MIT] (https://img.shields.io/badge/License-Apache%202.0-blue.svg)");
+  }
+
 
   // "MIT", "GPLv2", "Apache", "No License"
 
