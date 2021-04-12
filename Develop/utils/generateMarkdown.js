@@ -1,6 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+
+
+
+function renderLicenseBadge(license) {
+
+
+
+  // If there is no license, return an empty string
+}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
@@ -18,3 +25,7 @@ function generateMarkdown(data) {
 }
 
 module.exports = generateMarkdown; // functions must always be exported before working in other scripts
+
+
+
+// function license badge, link, sections are independant functions that will be called in generateMarkdown. 
