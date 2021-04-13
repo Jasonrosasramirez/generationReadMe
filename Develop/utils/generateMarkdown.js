@@ -51,11 +51,13 @@ function generateMarkdown(data) {
   
   // interpolates whatever is in this directly into a string. 
   // Everything within the return is what is actually written to the readme file. 
-  return `# ${data.title} 
-
+  return `#Title ${data.title} 
   Application Author: ${data.author}
-  ${renderLicenseBadge(data.license)} 
 
+  ## License
+  ${renderLicenseBadge(data.license)} 
+  ${renderLicenseSection(data.license)}
+  
   ## Table of Contents
 
   * [Description](##Description)
@@ -75,7 +77,7 @@ function generateMarkdown(data) {
   ## Usage 
   ${data.usageInformation}
 
-  ## Contributions
+  ## Contributing
   ${data.contributions}
 
   ## Tests 
@@ -83,13 +85,10 @@ function generateMarkdown(data) {
 
   ## Questions 
   If you have any questions, feel free to reach out via my GitHub or email below :)
-   
+
   Github username: ${data.questionsGithub}
   Github Proflie Link: (https://github.com/${data.questionsGithub})
   email: (${data.questionsEmail})
-
-  ## License
-  ${renderLicenseSection(data.license)}
 
 `; 
 
