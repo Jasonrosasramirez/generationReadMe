@@ -1,5 +1,5 @@
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// a function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
 
   if (license == "MIT") {
@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
+// a function that returns the license link
 function renderLicenseLink(license) {
 
   if (license == "MIT") {
@@ -33,7 +33,7 @@ function renderLicenseLink(license) {
   
 }
 
-// TODO: Create a function that returns the license section of README
+// a function that returns the license section of README
 function renderLicenseSection(license) {
   
   var lincenseLink = renderLicenseLink(license); // the license entered in by the user stored as a variable to the HTML link
@@ -46,7 +46,7 @@ function renderLicenseSection(license) {
   
 }
 
-// TODO: Create a function to generate markdown for README
+// a function to generate markdown for README
 function generateMarkdown(data) {
   
   // interpolates whatever is in this directly into a string. 
@@ -92,7 +92,7 @@ function generateMarkdown(data) {
 
 `; 
 
-}
+} // this template will be passed onto the index.js script through the export below 
 
 
 module.exports = generateMarkdown; // functions must always be exported before working in other scripts. In this case, the other three functions will be called within markdown. 
