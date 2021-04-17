@@ -1,9 +1,9 @@
-#Title Burger time  
+#Title Burger Time  
   Application Author: Jason 
 
   ## License
-  ![License: MIT] (https://img.shields.io/badge/License-Apache%202.0-blue.svg) 
-  License under the [Apache License] (https://www.opensource.org/licenses/Apache-2.0)
+  ![License:GPLv2] (https://img.shields.io/badge/License-GPL%20v2-blue.svg) 
+  License under the [GPLv2 License] (https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
   
   ## Table of Contents
 
@@ -16,24 +16,24 @@
   * [Lisense](##Lisence)
 
   ## Description
-  for good only :) 
+  only for good :) Description 
 
   ## Installation 
-  zip file 
+  installation package
 
   ## Usage 
-  try your best 
+  only for good :) Please 
 
   ## Contributing
-  ask nicely 
+  sure. Ask nicely 
 
   ## Tests 
-  test 2, and 85
+  Test 1, 2, and 3. 
 
   ## Questions 
   If you have any questions, feel free to reach out via my GitHub or email below :)
 
   Github username: jasonrosasramirez
   Github Proflie Link: (https://github.com/jasonrosasramirez)
-  email: (email)
+  email: (@gmail)
 
